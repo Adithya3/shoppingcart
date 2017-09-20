@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="wrapper">
+    <form class="form-signin">
+      <h3 class="form-signin-heading">Please Sign In</h3>
+      <hr class="colorgraph">
+      <br>
+
+      <input #username type="text" class="form-control"  placeholder="Username" required="" autofocus=""/>
+      <input #password type="text" class="form-control" placeholder="Password" required=""/>
+      <br>
+      <input type="button" class="btn btn-lg btn-primary btn-block"  (click)="passvariables(username.value,password.value)" value="Login"/></form>
+  </div>
+</div>
