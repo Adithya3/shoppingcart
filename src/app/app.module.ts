@@ -15,7 +15,8 @@ import {CartComponent} from './cart/cart.component';
 import {WishlistComponent} from './wishlist/wishlist.component';
 
 const appRoutes: Routes = [
-  {path: 'login', component: LoginComponent},
+  {path: '', component: LoginComponent},
+  {path: 'login', redirectTo: ''},
   {path: 'home', component: HomeComponent},
   {path: 'electronics', component: ElectronicsComponent},
   {path: 'icecreames', component: IcecreamesComponent},
