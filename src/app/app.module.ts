@@ -13,6 +13,7 @@ import {BooksComponent} from './books/books.component';
 import {RouterModule, Routes} from '@angular/router';
 import {CartComponent} from './cart/cart.component';
 import {WishlistComponent} from './wishlist/wishlist.component';
+import { ItemCartWishlistComponent } from './item-cart-wishlist/item-cart-wishlist.component';
 
 const appRoutes: Routes = [
   {path: '', component: LoginComponent},
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
     ClothesComponent,
     BooksComponent,
     CartComponent,
-    WishlistComponent
+    WishlistComponent,
+    ItemCartWishlistComponent
   ],
   imports: [
     BrowserModule,
