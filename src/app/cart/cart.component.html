@@ -1,3 +1,4 @@
 <app-header></app-header>
-<app-item-cart-wishlist *ngFor="let item of cart" [singleItem]="item"></app-item-cart-wishlist>
+<app-item-cart-wishlist *ngFor="let item of cart; let i=index" [singleItem]="item"
+                        [index]="i" [what]="'cart'"></app-item-cart-wishlist>
 <app-footer></app-footer>

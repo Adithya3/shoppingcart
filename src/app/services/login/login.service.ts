@@ -80,4 +80,9 @@ export class LoginService {
   getWishlist() {
     return this.users[this.currentuser].wishlist
   }
+
+  delete(index: number, what: string) {
+    console.log(this.users[this.currentuser][what].splice(index, 1))
+    console.log(this.users[this.currentuser][what])
+  }
 }
